@@ -5,8 +5,8 @@ import Table from '../../coreView/common/table';
 export default function AcquaintancesView({acquaintances}) {
 
   let columns = [];
-  if (acquaintances.appLabels != null && acquaintances.appLabels.SOCIAL_ACQUAINTANCES_TABLE != null) {
-    columns = acquaintances.appLabels.SOCIAL_ACQUAINTANCES_TABLE;
+  if (acquaintances.prefLabels != null && acquaintances.prefLabels.SOCIAL_ACQUAINTANCES_TABLE != null) {
+    columns = acquaintances.prefLabels.SOCIAL_ACQUAINTANCES_TABLE;
   }
   return (
     <Table items={acquaintances.items} columns={columns} />
